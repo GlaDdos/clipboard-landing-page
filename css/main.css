@@ -1,0 +1,262 @@
+* {
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+* body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(201deg, 11%, 66%);
+}
+* body div.wrapper {
+  background-color: white;
+  width: 375px;
+  background-image: url(../images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: auto;
+}
+* body div.wrapper section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+* body div.wrapper section h1, * body div.wrapper section h2, * body div.wrapper section h3 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+  color: hsl(210deg, 10%, 33%);
+  margin: 3.5rem 0 0 0rem;
+}
+* body div.wrapper section h2 {
+  font-size: 1.5rem;
+}
+* body div.wrapper section h3 {
+  font-size: 1.32rem;
+  margin-bottom: 0.5rem;
+}
+* body div.wrapper section h3 + p {
+  margin-top: 0;
+}
+* body div.wrapper section p {
+  color: hsl(201deg, 11%, 66%);
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.4rem;
+}
+* body div.wrapper section div.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+* body div.wrapper section div.button-wrapper button {
+  width: 100%;
+  color: white;
+  font-weight: 600;
+  padding: 0.8rem 0;
+  outline: none;
+  border: none;
+  border-radius: 1.5rem;
+  margin-top: 1rem;
+}
+* body div.wrapper section div.button-wrapper button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+* body div.wrapper section div.button-wrapper button.cyan {
+  background-color: hsl(171deg, 66%, 44%);
+  box-shadow: 0px 2px 3px 0px hsl(171deg, 65%, 32%);
+}
+* body div.wrapper section div.button-wrapper button.blue {
+  background-color: hsl(233deg, 100%, 69%);
+  box-shadow: 0px 2px 3px 0px hsl(233deg, 51%, 54%);
+}
+* body div.wrapper section div.image-wrapper {
+  max-width: 100%;
+  margin-top: 2.5rem;
+}
+* body div.wrapper section div.image-wrapper img {
+  width: 100%;
+}
+* body div.wrapper section div.col-1-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+* body div.wrapper section div.col-1-content div.item.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+* body div.wrapper section div.col-1-content div.item.icon div.image-wrapper {
+  width: 2.5rem;
+}
+* body div.wrapper section div.col-1-content div.item.icon h3 {
+  margin-top: 2rem;
+}
+* body div.wrapper section div.col-1-content div.image-wrapper {
+  max-width: 70%;
+  margin-top: 3rem;
+}
+* body div.wrapper section div.col-2-content div.content-wrapper div.item {
+  margin-bottom: 2.315rem;
+}
+* body div.wrapper footer {
+  background-color: hsl(208deg, 52%, 90%);
+  color: hsl(210deg, 10%, 33%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-top: 10rem;
+}
+* body div.wrapper footer div.image-wrapper {
+  width: 3rem;
+}
+* body div.wrapper footer div.image-wrapper img {
+  max-width: 100%;
+}
+* body div.wrapper footer nav {
+  margin-top: 1rem;
+  text-align: center;
+}
+* body div.wrapper footer nav ul {
+  padding: 0;
+  list-style: none;
+}
+* body div.wrapper footer nav ul li {
+  padding-bottom: 1.5rem;
+}
+* body div.wrapper footer nav ul li:hover {
+  color: hsl(171deg, 66%, 44%);
+  cursor: pointer;
+}
+* body div.wrapper footer div.icon-wrapper img {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+* body div.wrapper footer div.icon-wrapper img:hover {
+  cursor: pointer;
+  filter: invert(69%) sepia(46%) saturate(670%) hue-rotate(119deg) brightness(82%) contrast(88%);
+}
+
+@media (min-width: 1000px) {
+  * body div.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1440px;
+    background-image: url(../images/bg-header-desktop.png);
+  }
+  * body div.wrapper section {
+    padding-top: 7.2rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  * body div.wrapper section h1, * body div.wrapper section h2 {
+    max-width: 700px;
+  }
+  * body div.wrapper section h1 {
+    font-size: 2.5rem;
+  }
+  * body div.wrapper section h1 + p {
+    font-size: 1.2rem;
+  }
+  * body div.wrapper section h2 {
+    font-size: 2rem;
+  }
+  * body div.wrapper section p {
+    max-width: 700px;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-bottom: 1.75rem;
+  }
+  * body div.wrapper section div.button-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0;
+    width: 26rem;
+  }
+  * body div.wrapper section div.button-wrapper button:first-child {
+    margin-right: 1rem;
+  }
+  * body div.wrapper section div.col-2-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  * body div.wrapper section div.col-2-content div.image-wrapper {
+    direction: rtl;
+    overflow: hidden;
+    width: 100%;
+  }
+  * body div.wrapper section div.col-2-content div.image-wrapper img {
+    width: 100%;
+    margin-right: 2rem;
+  }
+  * body div.wrapper section div.col-2-content div.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  * body div.wrapper section div.col-2-content div.content-wrapper div.item {
+    width: 50%;
+    margin-left: 3.5rem;
+    margin-bottom: 3rem;
+  }
+  * body div.wrapper section div.col-2-content div.content-wrapper div.item h3, * body div.wrapper section div.col-2-content div.content-wrapper div.item p {
+    margin: 0;
+    text-align: left;
+  }
+  * body div.wrapper section div.col-1-content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  * body div.wrapper section div.col-1-content div.item.icon {
+    width: 20%;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+  }
+  * body div.wrapper section div.col-1-content div.image-wrapper {
+    align-items: center;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  * body div.wrapper section.no-top-padding {
+    padding-top: 0;
+  }
+  * body div.wrapper section.two-top-padding {
+    padding-top: 2rem;
+  }
+  * body div.wrapper footer {
+    flex-direction: row;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+  * body div.wrapper footer nav {
+    margin-top: 0;
+    width: 30rem;
+  }
+  * body div.wrapper footer nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  * body div.wrapper footer nav ul li {
+    text-align: left;
+    width: 10rem;
+  }
+  * body div.wrapper footer div.icon-wrapper img {
+    margin: 0 0.5rem;
+  }
+}/*# sourceMappingURL=main.css.map */
