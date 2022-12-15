@@ -8,8 +8,11 @@ $grayish-blue: hsl(201, 11%, 66%);
     font-family: 'Bai Jamjuree', sans-serif;
 
     body {
+        display: flex;
+        justify-content: center;
         margin: 0;
         padding: 0;
+        width: 100%;
 
         background-color: $grayish-blue;
 
